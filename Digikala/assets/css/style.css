@@ -1,0 +1,1144 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/web-fonts/YekanBakh.ttf')  format('truetype');      
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.none{
+    display: none;
+}
+
+.topBanner{
+    width: 100%;
+    height: 60px;
+}
+
+.topBanner img{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.leftSide{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 30px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.searchBox form{
+    position: relative;
+}
+
+.searchBox form i{
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    color: #bdb6b6;
+    font-size: 14px;
+}
+
+.searchBox form input{
+    padding: 10px 30px 10px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    background: #f1f1f1;
+    color: #000;
+    font-family: Arial,Tahoma;
+    font-size: 12px;
+}
+
+.searchBox form input::placeholder{
+    color: #b6b6b6;
+}
+
+.rightSide{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburgerMenu i{
+    font-size: 25px;
+    color: #0099ff;
+    cursor: pointer;
+}
+
+.login a{
+    padding: 10px 10px 6px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    font-family: "yekan";
+    font-size: 14px;
+    color: #636363;
+    position: relative;
+    top: 2px;
+}
+
+.login a i{
+    margin-right: 5px;
+}
+
+.line{
+    width: 1px;
+    height: 30px;
+    background: #e2e2e2;
+    margin: 0 10px;
+}
+
+.basket i{
+    cursor: pointer;
+}
+
+.headerMenu{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 4px 4px rgb(236, 236, 236);
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul>li{
+    font-family: "yekan";
+    font-size: 14px;
+    margin-right: 15px;
+    color:#a3a3a3;
+}
+
+.menu ul>li>a{
+    font-family: "yekan";
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+}
+
+.menu ul>li>a>i{
+    color:#a3a3a3;
+    margin-right: 2px;
+}
+
+.location{
+    font-family: "yekan";
+    font-size: 14px;
+    cursor: pointer;
+    color: #7e7e7e;
+    font-weight: bold;
+}
+
+.location i{
+    color: rgb(255, 0, 0);
+    margin-right: 5px;
+}
+
+.row{
+    width: 100%;
+}
+
+.slider{
+    margin-top: 60px;
+}
+
+.leftSlider{
+    width: 67%;
+}
+
+.rightSlider{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sliderBackground{
+    width: 100%; 
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sliderContent{
+    width: 100%;
+}
+
+.sliderContent img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.rightSlider .top,.rightSlider .bottom{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.rightSlider .top img,.rightSlider .bottom img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slides{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 23px;
+    background: none;
+    align-content: center;
+    padding: 10px;
+    position: absolute;
+}
+
+.slides a{
+    padding: 5px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px #414141;
+}
+
+.slideActive{
+    background: #00aeff !important;
+}
+
+.leftButton{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    border: none;
+    background: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.rightButton{
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.rightButton>i,.leftButton>i{
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.rightButton:hover{
+    margin-right: 5px;
+}
+
+.leftButton:hover{
+    margin-left: 5px;
+}
+
+.amazingOffres{
+    background: #ef394e;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.o-leftSide{
+    width: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.o-leftSide img{
+    width: 100%;
+}
+
+.o-leftSide button{
+    width: 80%;
+    padding: 10px 10px 4px 10px;
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-family: "yekan";
+    font-size: 18px;
+    border-radius: 10px;
+}
+.o-leftSide button i{
+    font-size: 14px;
+}
+
+.o-rightSide{
+    width:85%;
+    padding-left: 20px;
+}
+
+.mainContent{
+    width: 100%;
+    display: flex;
+    overflow:hidden;
+    position: relative;
+    align-items: center;
+}
+
+.leftArrow,.rightArrow{
+    position: absolute;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 28px 18px 28px 18px;
+    box-shadow: 0px 0px 3px #d6d6d6;
+    cursor: pointer;
+}
+
+.leftArrow{
+    left: 0;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.rightArrow{
+    right: 0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.product{
+    background: white;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 250px;
+}
+
+.productImg a{
+    padding: 15px;
+    display: block;
+}
+
+.productImg img{
+    width: 100%;
+}
+
+.productName{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.productName a{
+    padding: 10px;
+    font-family: "yekan";
+    font-size: 15px;
+    display: block;
+    text-align: justify;
+    line-height: calc(1.618 * 16px);
+}
+
+.productOldPrice{
+    display: flex;
+}
+
+.productDiscount{
+    padding: 10px 10px 5px 10px;
+    background: red;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: "yekan";
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.oldPrice{
+    padding: 10px 10px 5px 0px;
+    border-radius: 5px;
+    font-family: "yekan";
+    color: #c4c4c3;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.newPrice{
+    padding: 10px;
+    font-family: "yekan";
+    display: flex;
+}
+
+.new-price{
+    font-weight: bold;
+    margin-right: 2px;
+    font-size: 18px;
+}
+
+.ads{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+.adsContent{
+    padding: 5px;
+    width: 25%;
+}
+
+
+.adsContent img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #cac9c9;
+}
+
+.amazingOffres-SuperMarket{
+    background: #6bb927;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.demos{
+    margin-top: 15px;
+}
+
+.leftDemo{
+    padding: 10px;
+    width: 25%;
+}
+
+.demoBackground{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px #e2e2e2;
+}
+
+
+.l-title{
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+    text-align: center;
+    font-family: "yekan";
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(83, 83, 83);
+}
+
+.progressBar{
+    width: 90%;
+    height: 1.5px;
+    position: relative;
+    margin: 10px auto;
+    background: rgb(236, 236, 236);
+}
+
+.progressBar::after{
+    content: "";
+    width: 25%;
+    background-image: linear-gradient(to right, rgb(226, 226, 226) , rgb(255, 86, 86));
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.l-mainContent{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l-img{
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.l-img img{
+    width: 100%;
+}
+
+.l-name{
+    width: 100%;
+    font-family: "yekan";
+    font-size: 15px;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.l-price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "yekan";
+}
+
+.l-Price{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.l-countUnit{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.rightDemo{
+    width: 75%;
+    padding: 10px;
+}
+
+.titles{
+    width: 100%;
+    padding: 20px;
+}
+
+.leftTitle{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-bottom: 1.5px solid rgb(252, 76, 76);
+    padding-bottom: 10px;
+}
+
+.rightLine{
+    display: flex;
+    flex-grow: 28;
+    height: 100%;
+    border-bottom: 1.5px solid rgb(216, 216, 216);
+    align-items: stretch;
+    position: relative;
+    bottom: -50.5px;
+    margin-left: 10px;
+}
+
+.leftTitle h3{
+    font-family: "yekan";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.t-part2 h3{
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.r-mainContent{
+    width: 100%;
+    padding: 10px 5px 10px 20px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.m-posts{
+    width: 200px;
+    padding: 10px;
+    margin-right: 38px;
+    flex-shrink: 0;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.m-posts:hover{
+    box-shadow: 0px 0px 9px #e2e2e2;
+    transform: translateY(-5px);
+}
+
+.r-img{
+    width: 100%;
+}
+
+.r-img img{
+    width: 100%;
+}
+
+.r-proName{
+    width: 100%;
+    height: 45px;
+    text-align: justify;
+}
+
+.r-proName a{
+    font-family: "yekan";
+    line-height:15px;
+    font-size: 13px;
+    color: #8d8d8d;
+}
+
+.r-price{
+    width: 100%;
+    display: flex;
+    font-family: "yekan";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.r-leftArrow,.r-rightArrow{
+    position: absolute;
+    cursor: pointer;
+    padding: 30px 20px 30px 20px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 3px #e2e2e2;
+}
+
+.r-leftArrow{
+    top: 20%;
+    left: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.r-rightArrow{
+    top: 20%;
+    right: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.productSummary{
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.productSummary .container{
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #e2e2e2;
+    border-radius: 5px;
+}
+
+.symbol{
+    padding: 10px;
+    background: #fff;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.symbol:hover{
+    box-shadow: 0px 0px 10px #eeeeee;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(226, 226, 226));
+}
+
+.s-icon{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.s-icon a{
+    color: #00aeff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.s-title{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    font-family: "yekan";
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+}
+
+.s-count{
+    font-size: 14px;
+    font-family: "yekan";
+    font-weight: bold;
+}
+
+.footer{
+    background: #fff;
+    margin-top: 15px;
+    border-top: 1px solid #c9c9c9;
+}
+
+.footerLogo-ReturnTop{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerReturnTop button{
+    padding: 10px 10px 6px 10px;
+    background: none;
+    border: 1px solid rgb(80, 80, 80);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "yekan";
+    font-weight: bold;
+}
+
+.footerAddress{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    color: #525252;
+    font-family: "yekan";
+    font-weight: bold;
+    padding: 0px 10px 30px 10px;
+}
+
+.adLine{
+    width: 1px;
+    height: 10px;
+    margin:0px 10px 0px 10px;
+    background: #a7a7a7;
+}
+
+.footerProperty{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.p-items{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.i-img{
+    width: 15%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.i-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.i-title{
+    line-height: 15px;
+    height: 40px;
+    font-family: "yekan";
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+}
+
+.footerLists-Socials{
+    padding: 40px 0px 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footerLists{
+    width: 70%;
+}
+
+.footerLists nav{
+    width: 100%;
+    display: flex;
+}
+
+.footerLists nav ul{
+    list-style: none;
+    width: 30%;
+    font-family: "yekan";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footerLists nav ul a{
+    color: #777777;
+    line-height: 16px;
+}
+
+.footerLists nav ul>li:nth-child(1) a{
+    font-size: 19px;
+    color: #000;
+}
+
+.footerLists nav ul>li>a:hover{
+    color: rgb(255, 82, 82);
+}
+
+.footerLists nav ul>li:nth-child(1) a:hover{
+    color: #000;
+}
+
+.footerSocials{
+    width: 30%;
+    padding: 0;
+    
+}
+
+.footerSocials h2{
+    padding: 0;
+    font-family: "yekan";
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.socialsIcons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0 20px 0;
+}
+
+.socialsIcons a{
+    font-size: 20px;
+    color: #cccccc;
+    transition: .2s;
+    
+}
+
+.socialsIcons a:hover{
+    color: #000;
+}
+
+.footerEmail{
+    width: 100%;
+}
+
+.footerEmail form input{
+    padding: 10px;
+    font-family: "yekan";
+    border-radius: 5px;
+}
+
+.footerEmail form input[type="email"]{
+    border: none;
+    outline: none;
+    background: #d3d3d3;
+    font-size: 15px;
+    padding-bottom: 6px;
+    width: 85%;
+}
+
+.footerEmail form input[type="email"]:placeholder{
+    color: #808080;
+}
+
+.footerEmail form input[type="submit"]{
+    padding-bottom: 6px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff3f3f;
+    color: #fff;
+    width: 13.5%;
+}
+
+/* Edit ScrollBar */
+::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #dddddd;
+    
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(65, 179, 255);
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(6, 223, 17);
+  }
+
+  @media(max-width:1300px){
+      .footerLists,.footerSocials{
+          padding: 10px;
+      }
+  }
+
+  @media (max-width:1132px){
+    .topBanner{
+        display: none;
+    }
+    .leftDemo{
+        display: none;
+    }
+    .rightDemo{
+        width: 100%;
+    }
+  }
+
+  @media(max-width:1024px){
+      .footerLists-Socials{
+          flex-wrap: wrap;
+      }
+
+      .footerLists{
+          width: 100%;
+      }
+
+      .footerLists nav{
+          justify-content: center;
+      }
+
+      .footerSocials{
+          width: 100%;
+      }
+  }
+
+
+  @media (max-width:935px){
+    
+    .header{
+        box-shadow: 0px 2px 10px #e2e2e2;
+    }
+    
+    .header .container{
+          width: 100%;
+      }
+
+      .header .headerMenu{
+          display: none;
+      }
+
+      .slider{
+          margin-top: 15px;
+      }
+
+      .slider .container{
+          width: 100%;
+          flex-wrap: wrap;
+      }
+
+      .leftSlider{
+          width: 100%;
+      }
+
+      .rightSlider{
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+
+      .top{
+          padding: 0 !important;
+      }
+
+      .amazingOffres .container{
+          width: 100%;
+          overflow-x:scroll;
+          
+      }
+
+      .amazingOffres .container::-webkit-scrollbar {
+        height: 6px;
+      }
+      .amazingOffres-SuperMarket .container::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .o-leftSide{
+          width: 189px !important;
+          flex-shrink: 0;
+      }
+
+      .amazingOffres-SuperMarket .container{
+        width: 100%;
+        overflow-x:scroll;
+      }
+
+      .mainContent{
+          overflow: visible;
+      }
+
+      .amazingOffres-SuperMarket .leftArrow,
+      .amazingOffres-SuperMarket .rightArrow,
+      .amazingOffres .leftArrow,
+      .amazingOffres .rightArrow{
+          display: none;
+      }
+
+      .r-mainContent{
+          overflow-x:scroll;
+      }
+
+      .r-mainContent::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .m-posts{
+          flex-shrink: 0;
+      }
+
+      .r-mainContent .r-leftArrow,.r-mainContent .r-rightArrow{
+          display: none;
+      }
+
+      .footerLists-Socials{
+          flex-wrap: wrap;
+      }
+
+      .footerLists{
+          width: 100%;
+      }
+
+      .footerLists nav{
+          justify-content: space-evenly;
+      }
+
+      .footerSocials{
+          width: 100%;
+          padding: 10px;
+      }
+
+      .rightSide{
+          flex-direction: row-reverse;
+          justify-content: flex-start;
+      }
+
+      .searchBox{
+          display: none;
+      }
+
+      .login{
+          display: none;
+      }
+
+      .hamburgerMenu{
+          display: block;
+      }
+  }
+
+  @media (max-width:811px){
+    .footerProperty{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerProperty .p-items{
+        width: 35%;
+    }
+
+    .footerAddress{
+        justify-content: center;
+    }
+
+    .productSummary .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productSummary .symbol{
+        width: 40%;
+
+    }
+}
+
+
+  @media (max-width:488px){
+    .productSummary .symbol{
+        width: 100%;
+
+    }
+
+    .footerProperty .p-items{
+        width: 100%;
+    }
+
+    .footerLists nav{
+        flex-wrap: wrap;
+        
+    }
+
+    .footerLists nav ul{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .footerEmail form input[type="email"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footerEmail form input[type="submit"]{
+        width: 100%;
+    }
+
+    .ads .container{
+        flex-wrap: wrap;
+    }
+
+    .adsContent{
+        width: 50%;
+    }
+  }
+
+
+  
+
+
+
+
+
+
+  
