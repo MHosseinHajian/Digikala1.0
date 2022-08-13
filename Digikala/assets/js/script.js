@@ -1,6 +1,5 @@
 function main(){
     function progressBar(){
-        let one;
         console.log($(window).height())
         let documentHeight = $(document).height() - $(window).height();
         let docScrollTop = $(document).scrollTop()
