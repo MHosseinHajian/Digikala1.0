@@ -133,6 +133,14 @@ a{
     cursor: pointer;
 }
 
+.progressBar2{
+    width: 0%;
+    height: 5px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(3 197 23);
+}
+
 .headerMenu{
     position: absolute;
     background: #fff;
